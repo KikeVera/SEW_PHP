@@ -5,7 +5,7 @@
 
 <title>BaseDatos</title>
 <link rel="stylesheet" href="Ejercicio6.css"/>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -369,6 +369,7 @@
 					return;
 			}
 			$file = fopen($fileName, "r");
+			$column = fgetcsv($file, 10000, ",");
 			while (($column = fgetcsv($file, 10000, ",")) !== FALSE) {
 				$dni = "";
 				if (isset($column[0])) {
@@ -472,8 +473,7 @@
 				
 	}
 	
-	protected function mysqli_field_name($result, $field_offset)
-		{
+		protected function mysqli_field_name($result, $field_offset){
 			$properties = mysqli_fetch_field_direct($result, $field_offset);
 			return is_object($properties) ? $properties->name : null;
 		}
@@ -616,65 +616,100 @@
 	</form>
 	<h3>Insertar Datos</h3>
 	<form action='#' method='post' name='insercion'>
-		<label>DNI: <input type='text' name='dni' value='$insertar[dni]'></label>
-		<label>Nombre: <input type='text' name='nombre' value='$insertar[nombre]'></label>
-		<label>Apellidos: <input type='text' name='apellidos' value='$insertar[apellidos]'></label>
-		<label>Email: <input type='text' name='email' value='$insertar[email]'></label>
-		<label>Telefono: <input type='text' name='telefono' value='$insertar[telefono]'></label>
-		<label>Edad (>0): <input type='text' name='edad' value='$insertar[edad]'></label>
-		<label>Sexo(masculino/femenico): <input type='text' name='sexo' value='$insertar[sexo]'></label>
-		<label>Pericia informática (0-10): <input type='text' name='pericia' value='$insertar[pericia]'></label>
-		<label>Tiempo(seg)(>0): <input type='text' name='tiempo' value='$insertar[tiempo]'></label>
-		<label>Tarea realizada (si/no): <input type='text' name='realizada' value='$insertar[realizada]'></label>
-		<label>Comentarios: <input type='text' name='comentarios' value='$insertar[comentarios]'></label>
-		<label>Propuestas: <input type='text' name='propuestas' value='$insertar[propuestas]'></label>
-		<label>Valoracion (0-10): <input type='text' name='valoracion' value='$insertar[valoracion]'></label>
+		<label for='campo1'>DNI:</label>
+		<input id='campo1' type='text' name='dni' value='$insertar[dni]'>
+		<label for='campo2'>Nombre:</label>
+		<input id='campo2' type='text' name='nombre' value='$insertar[nombre]'>
+		<label for='campo3'>Apellidos:</label>
+	    <input id='campo3' type='text' name='apellidos' value='$insertar[apellidos]'>
+		<label for='campo4'>Email:</label>
+		<input id='campo4' type='text' name='email' value='$insertar[email]'>
+		<label for='campo5'>Telefono:</label>
+	    <input id='campo5' type='text' name='telefono' value='$insertar[telefono]'>
+		<label for='campo6'>Edad (>0):</label>
+		<input id='campo6' type='text' name='edad' value='$insertar[edad]'>
+		<label for='campo7'>Sexo(masculino/femenino):</label>
+		<input id='campo7' type='text' name='sexo' value='$insertar[sexo]'>
+		<label for='campo8'>Pericia informática:</label>
+		<input id='campo8' type='text' name='pericia' value='$insertar[pericia]'>
+		<label for='campo9'>Tiempo(seg)(>0):</label>
+		<input id='campo9' type='text' name='tiempo' value='$insertar[tiempo]'>
+		<label for='campo10'>Tarea realizada (si/no):</label>
+		<input id='campo10' type='text' name='realizada' value='$insertar[realizada]'>
+		<label for='campo11'>Comentarios:</label>
+		<input id='campo11' type='text' name='comentarios' value='$insertar[comentarios]'>
+		<label for='campo12'>Propuestas:</label>
+		<input id='campo12' type='text' name='propuestas' value='$insertar[propuestas]'>
+		<label for='campo13'>Valoracion (0-10):</label>
+		<input id='campo13' type='text' name='valoracion' value='$insertar[valoracion]'>
 		<input type='submit' value='Insertar Datos' name='btInsertar' >
 	</form>
 	<h3>Buscar Datos</h3>
 	<p>Busca el campo con el dni = ?</p>
 	<form action='#' method='post' name='busqueda'>
-		<label>DNI: <input type='text' name='dni' value='$buscar[dni]'></label>
+		<label for='campo14'>DNI:</label>
+		<input id='campo14' type='text' name='dni' value='$buscar[dni]'>
 		<input type='submit' value='Buscar Datos' name='btBuscar' >
 	</form>
 	
 	<h3>Borrar Datos</h3>
 	<p>Borrar el campo con el dni = ?</p>
 	<form action='#' method='post' name='borrado'>
-		<label>DNI: <input type='text' name='dni' value='$borrar[dni]'>
-		<input type='submit' value='Borrar Datos' name='btBorrar' ></label>
+		<label for='campo15'>DNI:</label>
+		<input id='campo15' type='text' name='dni' value='$borrar[dni]'>
+		<input type='submit' value='Borrar Datos' name='btBorrar' >
 	</form>
 	
 	<h3>Modificar Datos</h3>
 	<p>Modifica el campo con el dni = ?</p>
 	<form action='#' method='post' name='modificion'>
-		<label>DNI: <input type='text' name='dni' value='$modificar[dni]'></label>
-		<label>Nombre: <input type='text' name='nombre' value='$modificar[nombre]'></label>
-		<label>Apellidos: <input type='text' name='apellidos' value='$modificar[apellidos]'></label>
-		<label>Email: <input type='text' name='email' value='$modificar[email]'></label>
-		<label>Telefono: <input type='text' name='telefono' value='$modificar[telefono]'></label>
-		<label>Edad (>0): <input type='text' name='edad' value='$modificar[edad]'></label>
-		<label>Sexo(masculino/femenico): <input type='text' name='sexo' value='$modificar[sexo]'></label>
-		<label>Pericia informática (0-10): <input type='text' name='pericia' value='$modificar[pericia]'></label>
-		<label>Tiempo(seg)(>0): <input type='text' name='tiempo' value='$modificar[tiempo]'></label>
-		<label>Tarea realizada (si/no): <input type='text' name='realizada' value='$modificar[realizada]'></label>
-		<label>Comentarios: <input type='text' name='comentarios' value='$modificar[comentarios]'></label>
-		<label>Propuestas <input type='text' name='propuestas' value='$modificar[propuestas]'></label>
-		<label>Valoracion (0-10): <input type='text' name='valoracion' value='$modificar[valoracion]'></label>
+		<label for='campo16'>DNI:</label>
+		<input id='campo16' type='text' name='dni' value='$modificar[dni]'>
+		<label for='campo17'>Nombre:</label>
+		<input id='campo17' type='text' name='nombre' value='$modificar[nombre]'>
+		<label for='campo18'>Apellidos:</label>
+	    <input id='campo18' type='text' name='apellidos' value='$modificar[apellidos]'>
+		<label for='campo19'>Email:</label>
+		<input id='campo19' type='text' name='email' value='$modificar[email]'>
+		<label for='campo20'>Telefono:</label>
+	    <input id='campo20' type='text' name='telefono' value='$modificar[telefono]'>
+		<label for='campo21'>Edad (>0):</label>
+		<input id='campo21' type='text' name='edad' value='$modificar[edad]'>
+		<label for='campo22'>Sexo(masculino/femenino):</label>
+		<input id='campo22' type='text' name='sexo' value='$modificar[sexo]'>
+		<label for='campo23'>Pericia informática:</label>
+		<input id='campo23' type='text' name='pericia' value='$modificar[pericia]'>
+		<label for='campo24'>Tiempo(seg)(>0):</label>
+		<input id='campo24' type='text' name='tiempo' value='$modificar[tiempo]'>
+		<label for='campo25'>Tarea realizada (si/no):</label>
+		<input id='campo25' type='text' name='realizada' value='$modificar[realizada]'>
+		<label for='campo26'>Comentarios:</label>
+		<input id='campo26' type='text' name='comentarios' value='$modificar[comentarios]'>
+		<label for='campo27'>Propuestas:</label>
+		<input id='campo27' type='text' name='propuestas' value='$modificar[propuestas]'>
+		<label for='campo28'>Valoracion (0-10):</label>
+		<input id='campo28' type='text' name='valoracion' value='$modificar[valoracion]'>
 		<input type='submit' value='Modificar Datos' name='btModificar' >
 	</form>
 	
 	<h3>Mensajes</h3>
-	<textarea >$mensajes</textarea>
+	<label for='mensajes'>Mensajes:</label> 
+	<textarea id='mensajes'>$mensajes</textarea>
 	<h3>Informe</h3>
 	
 	<form action='#' method='post' name='modificion'>
-		<label>Media de edad: <input type='text' disabled='disabled' value='$informe[edadMedia]'></label>
-		<label>Frecuencia tipo de sexo: <input type='text' disabled='disabled' value='$informe[psexo]'></label>
-		<label>Media pericia: <input type='text' disabled='disabled' value='$informe[mediaPericia]'></label>
-		<label>Media tiempo tarea: <input type='text' disabled='disabled' value='$informe[mediaTiempo]'></label>
-		<label>Porcentaje de completado: <input type='text' disabled='disabled' value='$informe[pcorrecto]'></label>
-		<label>Puntuacion media: <input type='text' disabled='disabled' value='$informe[mediaValoracion]'></label>
+		<label for='campo26'>Media de edad:</label>
+		<input id='campo26' type='text' disabled='disabled' value='$informe[edadMedia]'>
+		<label for='campo27'>Frecuencia tipo de sexo:</label>
+		<input id='campo27' type='text' disabled='disabled' value='$informe[psexo]'>
+		<label for='campo28'>Media pericia: </label>
+		<input id='campo28' type='text' disabled='disabled' value='$informe[mediaPericia]'>
+		<label for='campo29'>Media tiempo tarea:</label>
+		<input id='campo29' type='text' disabled='disabled' value='$informe[mediaTiempo]'>
+		<label for='campo30'>Porcentaje de completado:</label>
+		<input id='campo30' type='text' disabled='disabled' value='$informe[pcorrecto]'>
+		<label for='campo31'>Puntuacion media: </label>
+		<input id='campo31' type='text' disabled='disabled' value='$informe[mediaValoracion]'>
 		<input type='submit' value='Generar informe' name='btInforme' >
 	</form>
 	
