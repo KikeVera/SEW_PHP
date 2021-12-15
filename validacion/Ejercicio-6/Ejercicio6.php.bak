@@ -615,7 +615,7 @@
 		<input type='submit'  value='Crear tabla' name='btCrearTabla' >
 	</form>
 	<h3>Insertar Datos</h3>
-	<p>Insertar los siguientes datos en el formulario</p>
+	<p>Insertar una persona en la base de datos</p>
 	<form action='#' method='post' name='insercion'>
 		<label for='campo1'>DNI:</label>
 		<input id='campo1' type='text' name='dni' value='$insertar[dni]'>
@@ -694,6 +694,7 @@
 	</form>
 	
 	<h3>Mensajes</h3>
+	<p>Tanto mensajes de error como información de las consultas</p>
 	<label for='mensajes'>Mensajes:</label> 
 	<textarea id='mensajes'>$mensajes</textarea>
 	<h3>Informe</h3>
