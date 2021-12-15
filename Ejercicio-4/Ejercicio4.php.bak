@@ -5,7 +5,7 @@
 
 <title>Traductor</title>
 <link rel="stylesheet" href="Ejercicio4.css"/>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -65,27 +65,32 @@
 		
 		public function setTable($start_date,$end_date,$base,$zona){
 			$data=$this->getData($start_date,$end_date,$base,$zona);
-			if(!isset($data['data']['rates'])){
-				return;
-			}
 			$table='<table><thead><tr><th>Fecha</th><th>Precio</th></tr></thead>';
 			$table.='<tbody>';
-			
-			foreach($data['data']['rates'] as $key=>$value){
+			if(!isset($data['data']['rates'])){
 				$table.="<tr>";
-				$table.="<td>".$key."</td>";
-				$unit="";
-				$price="";
-				foreach($data['data']['rates'][$key] as $key2=>$value2){
-					if($key2==='BRENTOIL'||$key2==='WTIOIL'){
-						$price=number_format(1/$value2,2);
-					}
-					
-				
-				}
-				$table.="<td>".($price)." ";
-				$table.=$data['data']['base']."/barril</td>";
+				$table.="<td>NA</td>";
+				$table.="<td>NA</td>";
 				$table.="</tr>";
+			}
+			else{
+			
+				foreach($data['data']['rates'] as $key=>$value){
+					$table.="<tr>";
+					$table.="<td>".$key."</td>";
+					$unit="";
+					$price="";
+					foreach($data['data']['rates'][$key] as $key2=>$value2){
+						if($key2==='BRENTOIL'||$key2==='WTIOIL'){
+							$price=number_format(1/$value2,2);
+						}
+						
+					
+					}
+					$table.="<td>".($price)." ";
+					$table.=$data['data']['base']."/barril</td>";
+					$table.="</tr>";
+				}
 			}
 			$table.="</tbody>";
 			$table.="</table>";

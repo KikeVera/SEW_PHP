@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Traductor</title>
+<title>Petróleo</title>
 <link rel="stylesheet" href="Ejercicio4.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
 
 
 
-<h2>Petróleo</h2>
+<h1>Petróleo</h1>
 <?php 
 	session_start();
 	class Petroleo {
