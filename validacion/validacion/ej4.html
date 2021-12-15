@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8">
+
+<title>Petróleo</title>
+<link rel="stylesheet" href="Ejercicio4.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+
+
+<h1>Petróleo</h1>
+ 
+		
+	<h2>Filtros</h2>
+	<p>Solo se proporcionan datos a partir del 2021-09-22 y para BrentOil y WTIOil, estandars muy usados en Europa y América respectivamente</p>
+	
+	<form action="#" method="post" name="español">
+		<label for="start">Fecha inicio:</label>
+		<input type="date" id="start" min="2021-09-22" name="datei">
+		<label for="end">Fecha final:</label>
+		<input type="date" id="end" min="2021-09-23" name="datef">
+		<label for="zona">Zona:</label>
+		<input list="zonaList" id="zona" name="zona">
+		<datalist id="zonaList">
+			<option value="Europa">
+			</option><option value="América">
+		</option></datalist>
+		<label for="moneda">Unidad monetaria:</label>
+		<input list="monedaList" id="moneda" name="moneda">
+		<datalist id="monedaList">
+			<option value="USD">
+			</option><option value="EUR">
+			</option><option value="GBP">
+		</option></datalist>
+		
+		
+		<input type="submit" value="Buscar" name="bt">
+		<section>
+			<h2>Precio del petróleo</h2>
+			<p>Datos del precio del petróleo en la zona, fecha y unidad monetaria seleccionada</p>
+			<table><thead><tr><th>Fecha</th><th>Precio</th></tr></thead><tbody><tr><td>NA</td><td>NA</td></tr></tbody></table>
+		</section>
+	</form>
+	
+	
+		
+	
+	
+	
+	
+
+
+
+
+</body></html>
