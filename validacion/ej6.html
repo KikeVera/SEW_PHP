@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8">
+
+<title>BaseDatos</title>
+<link rel="stylesheet" href="Ejercicio6.css">
+
+
+
+<link type="text/css" rel="stylesheet" href="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/page_context.js"></script></head>
+<body screen_capture_injected="true">
+
+ <h1>Base de Datos</h1>
+
+<main>
+<h2>Menu</h2>
+ 
+		
+	<h3>Operaciones generales</h3>
+	
+	<form action="#" method="post" name="generales">
+		<input type="submit" value="Crear base" name="btCrearBase">
+		<input type="submit" value="Crear tabla" name="btCrearTabla">
+	</form>
+	<h3>Insertar Datos</h3>
+	<form action="#" method="post" name="insercion">
+		<label>DNI: <input type="text" name="dni" value=""></label>
+		<label>Nombre: <input type="text" name="nombre" value=""></label>
+		<label>Apellidos: <input type="text" name="apellidos" value=""></label>
+		<label>Email: <input type="text" name="email" value=""></label>
+		<label>Telefono: <input type="text" name="telefono" value=""></label>
+		<label>Edad (&gt;0): <input type="text" name="edad" value=""></label>
+		<label>Sexo(masculino/femenico): <input type="text" name="sexo" value=""></label>
+		<label>Pericia informática (0-10): <input type="text" name="pericia" value=""></label>
+		<label>Tiempo(seg)(&gt;0): <input type="text" name="tiempo" value=""></label>
+		<label>Tarea realizada (si/no): <input type="text" name="realizada" value=""></label>
+		<label>Comentarios: <input type="text" name="comentarios" value=""></label>
+		<label>Propuestas: <input type="text" name="propuestas" value=""></label>
+		<label>Valoracion (0-10): <input type="text" name="valoracion" value=""></label>
+		<input type="submit" value="Insertar Datos" name="btInsertar">
+	</form>
+	<h3>Buscar Datos</h3>
+	<p>Busca el campo con el dni = ?</p>
+	<form action="#" method="post" name="busqueda">
+		<label>DNI: <input type="text" name="dni" value=""></label>
+		<input type="submit" value="Buscar Datos" name="btBuscar">
+	</form>
+	
+	<h3>Borrar Datos</h3>
+	<p>Borrar el campo con el dni = ?</p>
+	<form action="#" method="post" name="borrado">
+		<label>DNI: <input type="text" name="dni" value=""></label>
+		<input type="submit" value="Borrar Datos" name="btBorrar">
+	</form>
+	
+	<h3>Modificar Datos</h3>
+	<p>Modifica el campo con el dni = ?</p>
+	<form action="#" method="post" name="modificion">
+		<label>DNI: <input type="text" name="dni" value=""></label>
+		<label>Nombre: <input type="text" name="nombre" value=""></label>
+		<label>Apellidos: <input type="text" name="apellidos" value=""></label>
+		<label>Email: <input type="text" name="email" value=""></label>
+		<label>Telefono: <input type="text" name="telefono" value=""></label>
+		<label>Edad (&gt;0): <input type="text" name="edad" value=""></label>
+		<label>Sexo(masculino/femenico): <input type="text" name="sexo" value=""></label>
+		<label>Pericia informática (0-10): <input type="text" name="pericia" value=""></label>
+		<label>Tiempo(seg)(&gt;0): <input type="text" name="tiempo" value=""></label>
+		<label>Tarea realizada (si/no): <input type="text" name="realizada" value=""></label>
+		<label>Comentarios: <input type="text" name="comentarios" value=""></label>
+		<label>Propuestas <input type="text" name="propuestas" value=""></label>
+		<label>Valoracion (0-10): <input type="text" name="valoracion" value=""></label>
+		<input type="submit" value="Modificar Datos" name="btModificar">
+	</form>
+	
+	<h3>Mensajes</h3>
+	<textarea></textarea>
+	<h3>Informe</h3>
+	
+	<form action="#" method="post" name="modificion">
+		<label>Media de edad: <input type="text" disabled="disabled" value=""></label>
+		<label>Frecuencia tipo de sexo: <input type="text" disabled="disabled" value=""></label>
+		<label>Media pericia: <input type="text" disabled="disabled" value=""></label>
+		<label>Media tiempo tarea: <input type="text" disabled="disabled" value=""></label>
+		<label>Porcentaje de completado: <input type="text" disabled="disabled" value=""></label>
+		<label>Puntuacion media: <input type="text" disabled="disabled" value=""></label>
+		<input type="submit" value="Generar informe" name="btInforme">
+	</form>
+	
+	<h3>Exportar a csv</h3>
+	
+	<form action="#" method="post" name="exportar">
+		<input type="submit" value="Exportar" name="btExpCsv">
+	</form>
+	
+	<h3>Importar de csv</h3>
+	<form action="#" method="post" name="importar" enctype="multipart/form-data">
+		<label>Elige un archivo csv<input type="file" name="file" accept=".csv"></label>
+		<input type="submit" value="Importar" name="btImpCsv">
+		
+	</form>
+	
+	
+
+	
+	</main>
+
+
+
+
+</body></html>

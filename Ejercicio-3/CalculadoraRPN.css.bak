@@ -1,0 +1,173 @@
+
+  
+ /*Especificidad: 001*/
+  body{
+	 font: 400 1em ARIAL, sans-serif;
+	color: #000000;
+	background-color:#E3E4E5;
+}
+
+/*Especificidad: 001*/
+h1{
+	
+	font: 400 2em ARIAL, sans-serif;
+	  text-align:center;
+	  
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  text-decoration:underline;
+	  
+	
+}
+
+/*Especificidad: 001*/
+h2{
+	 grid-column: span 4;
+	  font: 400 1.8em ARIAL, sans-serif;
+	  text-align:center;
+	  
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  
+	  
+  }
+
+
+/*Especificidad: 001*/
+main{
+	  display: flex;
+   
+}
+ 
+  /*Especificidad: 001*/
+  section{
+	  margin: auto;
+	
+	 text-align:center;
+	 display: grid;
+    grid-template-columns: repeat(4,5em);
+    align-items: center ;
+    
+    overflow-x: auto;
+	 
+	
+	 
+  }
+  
+  form{
+	  grid-column: span 4;
+	  display: grid;
+    grid-template-columns: repeat(4,5em);
+	  
+  }
+  
+  /*Especificidad: 011*/
+  input[type=text]{
+	  
+	  grid-column: span 3;
+	  margin-bottom: 0.5em;
+	  font: 400 1.5em ARIAL, sans-serif;
+	  color: #000000;
+	   
+	   background-color:#FFFFFF;
+	   width:9em;
+	   height:2em;
+	   
+	   
+  }
+  
+  /*Especificidad: 001*/
+  textarea{
+	  grid-column: span 4;
+	  overflow-y: scroll;
+	  text-align:center;
+	   background-color:#FFFFFF ;
+	    color: #000000;
+	   font: 400 1.3em ARIAL, sans-serif;
+	  
+	  height:10em;
+	   margin-bottom:0.5em;
+	  
+ }
+  
+  
+ /*Especificidad: 001*/
+  label{
+	
+	  font: 400 1.5em ARIAL, sans-serif;
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  
+  }
+  
+  /*Especificidad: 011*/
+  input[type=submit]{
+	  
+	 
+	  margin: 0.2em 0.4em;
+	  font: 400 1em ARIAL, sans-serif;
+	  color: #FFFFFF;
+	  
+	   background-color:#626262;
+	   width:4em;
+	   height:3em;
+	   
+  }
+
+ 
+ /*Especificidad: 011*/
+  input[value="/"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+/*Especificidad: 011*/
+  input[value="x"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="-"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="+"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="="]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+  
+  /*Especificidad: 011*/
+  input[value="Enter"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+  
+  /*Especificidad: 011*/
+  input[value="DEL"]{
+	grid-column: span 3;
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="C"]{
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+  
+ 
+ 

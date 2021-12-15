@@ -1,0 +1,202 @@
+/*Especificidad: 001*/
+body{
+	 font: 400 1em ARIAL, sans-serif;
+	color: #000000;
+	background-color:#E3E4E5;
+}
+
+/*Especificidad: 001*/
+h1{
+	
+	font: 400 2em ARIAL, sans-serif;
+	  text-align:center;
+	  
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  text-decoration:underline;
+	  
+	
+}
+
+/*Especificidad: 001*/
+h2{
+	 grid-column: span 5;
+	  font: 400 1.8em ARIAL, sans-serif;
+	  text-align:center;
+	  
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  
+	  
+  }
+
+
+/*Especificidad: 001*/
+main{
+	  display: flex;
+   
+}
+ 
+  /*Especificidad: 001*/
+  section{
+	  margin: auto;
+	
+	 text-align:center;
+	 display: grid;
+    grid-template-columns: repeat(5,5em);
+    align-items: center ;
+    
+    overflow-x: auto;
+	 
+	
+	 
+  }
+  
+  /*Especificidad: 001*/
+  form{
+	  grid-column: span 5;
+	 display: grid;
+    grid-template-columns: repeat(5,5em);
+	
+	 
+  }
+  
+  /*Especificidad: 011*/
+  input[type=text]{
+	  
+	  grid-column: span 4;
+	  margin-bottom: 0.5em;
+	  font: 400 1.5em ARIAL, sans-serif;
+	  color: #000000;
+	   
+	   background-color:#FFFFFF;
+	   width:13em;
+	   height:2em;
+	   
+	   
+  }
+  
+  
+  /*Especificidad: 001*/
+  label{
+	
+	  font: 400 1.5em ARIAL, sans-serif;
+	  background-color:#E3E4E5;
+	  color: #000000;
+	  
+  }
+  
+  /*Especificidad: 011*/
+  input[type=button]{
+	  
+	 
+	  margin: 0.2em 0.4em;
+	  font: 400 1em ARIAL, sans-serif;
+	  color: #FFFFFF;
+	  
+	   background-color:#626262;
+	   width:4em;
+	   height:3em;
+	   
+  }
+
+  
+
+  /*Especificidad: 011*/
+  input[value="HYP"]{
+	  grid-column: span 4;
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="DEG"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="RAD"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="mr"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="mc"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="m-"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="m+"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="ms"]{
+
+	color: #FFFFFF;
+ 	background-color:#000000;
+  }
+
+  
+/*Especificidad: 011*/
+  input[value="/"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="x"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="-"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="+"]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+
+  /*Especificidad: 011*/
+  input[value="="]{
+
+	color: #FFFFFF;
+ 	background-color:#8B0000;
+  }
+  
+  
+  
+	  
+  
+  
+  
