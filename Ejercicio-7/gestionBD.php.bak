@@ -1007,8 +1007,7 @@
 	echo " 
 	
 	<h3>Mensajes</h3>
-	<label for='mensajes'>Mensajes:</label> 
-	<textarea id='mensajes'>$mensajes</textarea>
+	<textarea >$mensajes</textarea>
 		
 	<h3>Operaciones generales</h3>
 	

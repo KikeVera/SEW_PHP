@@ -665,7 +665,8 @@
 	</form>
 	
 	<h3>Mensajes</h3>
-	<textarea >$mensajes</textarea>
+	<label for='mensajes'>Mensajes:</label> 
+	<textarea id='mensajes'>$mensajes</textarea>
 	<h3>Informe</h3>
 	
 	<form action='#' method='post' name='modificion'>

@@ -277,47 +277,48 @@
 	echo " 
 	<label for='ans'>Ans:</label> 
 	<input disabled='disabled' type='text' id='ans' value='$valor'/>
-	<textarea>$pila</textarea>
+	<label for='pila'>Pila:</label> 
+	<textarea id='pila'>$pila</textarea>
 	<form action='#' method='post' name='botones'>
 		
-			<input type='submit' class='mem' value='C' name='C' >
-			<input type='submit' class='mem' value='DEL' name='DEL' >
+			<input type='submit' value='C' name='C' >
+			<input type='submit' value='DEL' name='DEL' >
 			
-			<input type='submit' class='tecla' value='sin' name='sin' >
-			<input type='submit' class='tecla' value='cos' name='cos' >
-			<input type='submit' class='tecla' value='tan' name='tan' >
-			<input type='submit' class='tecla' value='x&#178;' name='x2' >
+			<input type='submit' value='sin' name='sin' >
+			<input type='submit' value='cos' name='cos' >
+			<input type='submit' value='tan' name='tan' >
+			<input type='submit' value='x&#178;' name='x2' >
 			
-			<input type='submit' class='tecla' value='arcsin' name='arcsin' >
-			<input type='submit' class='tecla' value='arccos' name='arccos' >
-			<input type='submit' class='tecla' value='arctan' name='arctan' >
-			<input type='submit' class='tecla' value='√' name='raiz' >
+			<input type='submit' value='arcsin' name='arcsin' >
+			<input type='submit' value='arccos' name='arccos' >
+			<input type='submit' value='arctan' name='arctan' >
+			<input type='submit' value='√' name='raiz' >
 			
-			<input type='submit' class='tecla' value='log' name='log' >
-			<input type='submit' class='tecla' value='n!' name='n!' >
-			<input type='submit' class='tecla' value='π' name='π' >
-			<input type='submit' class='tecla' value='/' name='/' >
+			<input type='submit' value='log' name='log' >
+			<input type='submit' value='n!' name='n!' >
+			<input type='submit' value='π' name='π' >
+			<input type='submit' value='/' name='/' >
 		
-			<input type='submit' class='tecla' value='7' name='7' >
-			<input type='submit' class='tecla' value='8' name='8' >
-			<input type='submit' class='tecla' value='9' name='9' >
-			<input type='submit' class='tecla' value='x' name='x' >
+			<input type='submit' value='7' name='7' >
+			<input type='submit' value='8' name='8' >
+			<input type='submit' value='9' name='9' >
+			<input type='submit' value='x' name='x' >
 		
-			<input type='submit' class='tecla' value='4' name='4' >
-			<input type='submit' class='tecla' value='5' name='5' >
-			<input type='submit' class='tecla' value='6' name='6'>
-			<input type='submit' class='tecla' value='-' name='-' >
+			<input type='submit' value='4' name='4' >
+			<input type='submit' value='5' name='5' >
+			<input type='submit' value='6' name='6'>
+			<input type='submit' value='-' name='-' >
 		
 		
-			<input type='submit' class='tecla' value='1' name='1' >
-			<input type='submit' class='tecla' value='2' name='2' >
-			<input type='submit' class='tecla' value='3' name='3' >
-			<input type='submit' class='tecla' value='+' name='+' >
+			<input type='submit' value='1' name='1' >
+			<input type='submit' value='2' name='2' >
+			<input type='submit' value='3' name='3' >
+			<input type='submit' value='+' name='+' >
 			
-			<input type='submit' class='tecla' value='+-' name='+-' >
-			<input type='submit' class='tecla' value='0' name='0' >
-			<input type='submit' class='tecla' value='.' name='punto' >
-			<input type='submit' class='tecla' value='Enter' name='Enter' >
+			<input type='submit' value='+-' name='+-' >
+			<input type='submit' value='0' name='0' >
+			<input type='submit' value='.' name='punto' >
+			<input type='submit' value='Enter' name='Enter' >
 		
 	</form>
 	

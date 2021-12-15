@@ -3,8 +3,8 @@
 <html lang="es"><head>
 <meta charset="UTF-8">
 
-<title>CalculadoraRPN</title>
-<link rel="stylesheet" href="CalculadoraRPN.css">
+<title>CalculadoraCientifica</title>
+<link rel="stylesheet" href="CalculadoraCientifica.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -15,55 +15,65 @@
 
 <main>
 <section>
-<h2>Calculadora RPN</h2>
+<h2>Calculadora Cientifica</h2>
  
+	
 	<label for="ans">Ans:</label> 
 	<input disabled="disabled" type="text" id="ans" value="">
-	<label for="pila">Pila:</label> 
-	<textarea id="pila">Pila[2] = 8
-Pila[1] = 6
-Pila[0] = 6
-</textarea>
 	<form action="#" method="post" name="botones">
 		
-			<input type="submit" value="C" name="C">
-			<input type="submit" value="DEL" name="DEL">
+			<input type="submit" value="RAD" name="ang">
+			<input type="submit" value="HYP" name="HYP">
 			
+			
+			<input type="submit" value="mr" name="mr">
+			<input type="submit" value="mc" name="mc">
+			<input type="submit" value="m-" name="m-">
+			<input type="submit" value="m+" name="m+">
+			<input type="submit" value="ms" name="ms">
+		
+			<input type="submit" value="x²" name="x2">
+			<input type="submit" value="xⁿ" name="xn">
 			<input type="submit" value="sin" name="sin">
 			<input type="submit" value="cos" name="cos">
 			<input type="submit" value="tan" name="tan">
-			<input type="submit" value="x²" name="x2">
-			
-			<input type="submit" value="arcsin" name="arcsin">
-			<input type="submit" value="arccos" name="arccos">
-			<input type="submit" value="arctan" name="arctan">
+		
 			<input type="submit" value="√" name="raiz">
-			
+			<input type="submit" value="10ⁿ" name="10n">
 			<input type="submit" value="log" name="log">
-			<input type="submit" value="n!" name="n!">
-			<input type="submit" value="π" name="π">
+			<input type="submit" value="Exp" name="Exp">
+			<input type="submit" value="Mod" name="Mod">
+			
+		
+			<input type="submit" value="e" name="e">
+			<input type="submit" value="CE" name="CE">
+			<input type="submit" value="C" name="C">
+			<input type="submit" value="⇐" name="back">
 			<input type="submit" value="/" name="/">
 		
+			<input type="submit" value="π" name="π">
 			<input type="submit" value="7" name="7">
 			<input type="submit" value="8" name="8">
 			<input type="submit" value="9" name="9">
 			<input type="submit" value="x" name="x">
 		
+			<input type="submit" value="n!" name="n!">
 			<input type="submit" value="4" name="4">
 			<input type="submit" value="5" name="5">
 			<input type="submit" value="6" name="6">
 			<input type="submit" value="-" name="-">
 		
-		
+			<input type="submit" value="+-" name="+-">
 			<input type="submit" value="1" name="1">
 			<input type="submit" value="2" name="2">
 			<input type="submit" value="3" name="3">
 			<input type="submit" value="+" name="+">
-			
-			<input type="submit" value="+-" name="+-">
+		
+			<input type="submit" value="(" name="(">
+			<input type="submit" value=")" name=")">
 			<input type="submit" value="0" name="0">
 			<input type="submit" value="." name="punto">
-			<input type="submit" value="Enter" name="Enter">
+			<input type="submit" value="=" name="=">
 		
 	</form>
 	

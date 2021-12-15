@@ -410,8 +410,7 @@
 	</form>
 	
 	<h3>Resultado de la busqueda</h3>
-	<label for='resultado'>Resultado:</label> 
-	<textarea id='resultado'>$mensajes</textarea>
+	<textarea >$mensajes</textarea>
 	
 	
 
