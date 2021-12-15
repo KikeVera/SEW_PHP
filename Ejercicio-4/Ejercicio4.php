@@ -71,7 +71,7 @@
 				$table.="<tr>";
 				$table.="<td>NA</td>";
 				$table.="<td>NA</td>";
-				$table.="<tr>";
+				$table.="</tr>";
 			}
 			else{
 			

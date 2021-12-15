@@ -43,7 +43,7 @@
 		<section>
 			<h2>Precio del petróleo</h2>
 			<p>Datos del precio del petróleo en la zona, fecha y unidad monetaria seleccionada</p>
-			<table><thead><tr><th>Fecha</th><th>Precio</th></tr></thead><tbody><tr><td>NA</td><td>NA</td></tr></tbody></table>
+			<table><thead><tr><th>Fecha</th><th>Precio</th></tr></thead><tbody><tr><td>NA</td><td>NA</td></tr><tr></tr></tbody></table>
 		</section>
 	</form>
 	
