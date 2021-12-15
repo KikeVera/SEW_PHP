@@ -5,7 +5,7 @@
 
 <title>CalculadoraCientifica</title>
 <link rel="stylesheet" href="CalculadoraCientifica.css"/>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
