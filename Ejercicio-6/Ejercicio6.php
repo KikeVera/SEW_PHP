@@ -609,7 +609,7 @@
 	echo " 
 		
 	<h3>Operaciones generales</h3>
-	
+	<p>Operaciones generales de la base de datos</p>
 	<form action='#' method='post' name='generales'>
 		<input type='submit'  value='Crear base' name='btCrearBase' >
 		<input type='submit'  value='Crear tabla' name='btCrearTabla' >
@@ -721,7 +721,8 @@
 	
 	<h3>Importar de csv</h3>
 	<form action='#' method='post' name='importar' enctype='multipart/form-data'>
-		<label>Elige un archivo csv<input type='file' name='file' accept='.csv'></label>
+		<label for='campo35'>Elige un archivo csv:</label>
+		<input id='campo35' type='file' name='file' accept='.csv'>
 		<input type='submit' value='Importar' name='btImpCsv' >
 		
 	</form>

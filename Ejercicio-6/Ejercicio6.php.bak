@@ -609,12 +609,13 @@
 	echo " 
 		
 	<h3>Operaciones generales</h3>
-	
+	<p>Operaciones generales de la base de datos</p>
 	<form action='#' method='post' name='generales'>
 		<input type='submit'  value='Crear base' name='btCrearBase' >
 		<input type='submit'  value='Crear tabla' name='btCrearTabla' >
 	</form>
 	<h3>Insertar Datos</h3>
+	<p>Insertar los siguientes datos en el formulario</p>
 	<form action='#' method='post' name='insercion'>
 		<label for='campo1'>DNI:</label>
 		<input id='campo1' type='text' name='dni' value='$insertar[dni]'>
@@ -698,18 +699,18 @@
 	<h3>Informe</h3>
 	
 	<form action='#' method='post' name='modificion'>
-		<label for='campo26'>Media de edad:</label>
-		<input id='campo26' type='text' disabled='disabled' value='$informe[edadMedia]'>
-		<label for='campo27'>Frecuencia tipo de sexo:</label>
-		<input id='campo27' type='text' disabled='disabled' value='$informe[psexo]'>
-		<label for='campo28'>Media pericia: </label>
-		<input id='campo28' type='text' disabled='disabled' value='$informe[mediaPericia]'>
-		<label for='campo29'>Media tiempo tarea:</label>
-		<input id='campo29' type='text' disabled='disabled' value='$informe[mediaTiempo]'>
-		<label for='campo30'>Porcentaje de completado:</label>
-		<input id='campo30' type='text' disabled='disabled' value='$informe[pcorrecto]'>
-		<label for='campo31'>Puntuacion media: </label>
-		<input id='campo31' type='text' disabled='disabled' value='$informe[mediaValoracion]'>
+		<label for='campo29'>Media de edad:</label>
+		<input id='campo29' type='text' disabled='disabled' value='$informe[edadMedia]'>
+		<label for='campo30'>Frecuencia tipo de sexo:</label>
+		<input id='campo30' type='text' disabled='disabled' value='$informe[psexo]'>
+		<label for='campo31'>Media pericia: </label>
+		<input id='campo31' type='text' disabled='disabled' value='$informe[mediaPericia]'>
+		<label for='campo32'>Media tiempo tarea:</label>
+		<input id='campo32' type='text' disabled='disabled' value='$informe[mediaTiempo]'>
+		<label for='campo33'>Porcentaje de completado:</label>
+		<input id='campo33' type='text' disabled='disabled' value='$informe[pcorrecto]'>
+		<label for='campo34'>Puntuacion media: </label>
+		<input id='campo34' type='text' disabled='disabled' value='$informe[mediaValoracion]'>
 		<input type='submit' value='Generar informe' name='btInforme' >
 	</form>
 	
@@ -721,7 +722,8 @@
 	
 	<h3>Importar de csv</h3>
 	<form action='#' method='post' name='importar' enctype='multipart/form-data'>
-		<label>Elige un archivo csv<input type='file' name='file' accept='.csv'></label>
+		<label for='campo35'>Elige un archivo csv:</label>
+		<input id='campo35' type='file' name='file' accept='.csv'>
 		<input type='submit' value='Importar' name='btImpCsv' >
 		
 	</form>
