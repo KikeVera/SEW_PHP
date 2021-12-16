@@ -1038,7 +1038,7 @@
 		<label for='campo5'>Duración:</label>
 		<input id='campo5' type='text' name='duracion' value='$insertarPelicula[duracion]'>
 		<label for='campo6'>Genero:</label>
-		<input id='campo6' type='text' name='genero' value='$insertarPelicula[genero]'><
+		<input id='campo6' type='text' name='genero' value='$insertarPelicula[genero]'>
 		
 		<input type='submit' value='Insertar Datos' name='btInsertarPelicula' >
 	</form>
