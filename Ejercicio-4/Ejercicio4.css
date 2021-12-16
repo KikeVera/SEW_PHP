@@ -86,7 +86,30 @@ td{
   
 }
 
-  
+form{
+		margin: auto;
+	
+	 text-align:center;
+	 display: grid;
+    grid-template-columns: repeat(4,13em);
+    align-items: center ;
+    
+    overflow-x: auto;
+	}
+
+  input[type=submit]{
+	  
+	  
+	 
+	  font: 400 1em ARIAL, sans-serif;
+	  color: #FFFFFF;
+	   grid-column: span 4;
+	   background-color:#626262;
+	   width:8.5em;
+	   height:1.5em;
+	   margin-top:1em;
+	   
+  }
   
   
   

@@ -142,6 +142,7 @@
 	<p>Solo se proporcionan datos a partir del 2021-09-22 y para BrentOil y WTIOil, estandars muy usados en Europa y América respectivamente</p>
 	
 	<form action='#' method='post' name='español'>
+		
 		<label for='start'>Fecha inicio:</label>
 		<input type='date' id='start' min='2021-09-22' name='datei'>
 		<label for='end'>Fecha final:</label>
@@ -162,12 +163,13 @@
 		
 		
 		<input type='submit' value='Buscar' name='bt'>
-		<section>
+		
+	</form>
+	<section>
 			<h2>Precio del petróleo</h2>
 			<p>Datos del precio del petróleo en la zona, fecha y unidad monetaria seleccionada</p>
 			$datos
 		</section>
-	</form>
 	
 	
 		

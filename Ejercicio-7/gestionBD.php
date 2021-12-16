@@ -1007,11 +1007,12 @@
 	echo " 
 	
 	<h3>Mensajes</h3>
+	<p>Mensajes de error y resultado de las consultas:</p>
 	<label for='mensajes'>Mensajes:</label> 
 	<textarea id='mensajes'>$mensajes</textarea>
 		
 	<h3>Operaciones generales</h3>
-	
+	<p>Crear tablas y base de datos;</p>
 	<form action='#' method='post' name='generales'>
 		<input type='submit' value='Crear base' name='btCrearBase' >
 		<input type='submit' value='Crear tablas' name='btCrearTabla' >

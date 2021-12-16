@@ -1038,7 +1038,7 @@
 		<label for='campo5'>Duración:</label>
 		<input id='campo5' type='text' name='duracion' value='$insertarPelicula[duracion]'>
 		<label for='campo6'>Genero:</label>
-		<input id='campo6' type='text' name='genero' value='$insertarPelicula[genero]'><
+		<input id='campo6' type='text' name='genero' value='$insertarPelicula[genero]'>
 		
 		<input type='submit' value='Insertar Datos' name='btInsertarPelicula' >
 	</form>
@@ -1197,6 +1197,7 @@
 	
 	<h3>Importar de csv</h3>
 	<h4>Cine</h4>
+	<p>Importar CSV de la tabla cine</p>
 	<form action='#' method='post' name='importar' enctype='multipart/form-data'>
 		<label for='campo34'>Elige un archivo csv:</label>
 		<input id='campo34' type='file' name='file' accept='.csv'>
@@ -1205,6 +1206,7 @@
 	</form>
 	
 	<h4>Pelicula</h4>
+	<p>Importar CSV de la tabla pelicula</p>
 	<form action='#' method='post' name='importarPelicula' enctype='multipart/form-data'>
 		<label for='campo35'>Elige un archivo csv:</label>
 		<input id='campo35' type='file' name='filePelicula' accept='.csv'>
@@ -1213,6 +1215,7 @@
 	</form>
 	
 	<h4>Sala</h4>
+	<p>Importar CSV de la tabla sala</p>
 	<form action='#' method='post' name='importarSala' enctype='multipart/form-data'>
 		<label for='campo36'>Elige un archivo csv:</label>
 		<input id='campo36' type='file' name='fileSala' accept='.csv'>
@@ -1221,6 +1224,7 @@
 	</form>
 	
 	<h4>Sesion</h4>
+	<p>Importar CSV de la tabla sesion</p>
 	<form action='#' method='post' name='importarSesion' enctype='multipart/form-data'>
 		<label for='campo37'>Elige un archivo csv:</label>
 		<input id='campo37' type='file' name='fileSesion' accept='.csv'>
@@ -1230,21 +1234,25 @@
 	
 	<h3>Exportar a csv</h3>
 	<h4>Cine</h4>
+	<p>Exportar CSV de la tabla cine</p>
 	<form action='#' method='post' name='exportar'>
 		<input type='submit' value='Exportar' name='btExpCsv' >
 	</form>
 	
 	<h4>Pelicula</h4>
+	<p>Exportar CSV de la tabla pelicula</p>
 	<form action='#' method='post' name='exportarPelicula'>
 		<input type='submit' value='Exportar' name='btExpCsvPelicula' >
 	</form>
 	
 	<h4>Sala</h4>
+	<p>Exportar CSV de la tabla sala</p>
 	<form action='#' method='post' name='exportarSala'>
 		<input type='submit' value='Exportar' name='btExpCsvSala' >
 	</form>
 	
 	<h4>Sesion</h4>
+	<p>Exportar CSV de la tabla sesion</p>
 	<form action='#' method='post' name='exportarSesion'>
 		<input type='submit' value='Exportar' name='btExpCsvSesion' >
 	</form>
