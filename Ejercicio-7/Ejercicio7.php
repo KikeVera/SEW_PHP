@@ -372,26 +372,36 @@
 	echo " 
 		
 	<h3>Buscar una pelicula</h3>
+	<p>Insertar el titulo de la pelicula a buscar</p>
 	<form action='#' method='post' name='insercion'>
-		<label>Titulo: <input type='text' name='pelicula' value='$pelicula'></label>
+		<label for='campo1'>Titulo:</label>
+		<input id='campo1' type='text' name='pelicula' value='$pelicula'>
 		<input type='submit' value='Buscar pelicula' name='btBuscarPeli' >
 	</form>
 	
 	
 	<h3>Cartelera</h3>
+	<p>Insertar nombre del cine para ver cartelera</p>
 	<form action='#' method='post' name='insercion'>
-		<label>Cine: <input type='text' name='cine' value='$cine'></label>
+		<label for='campo2'>Cine:</label>
+		<input id='campo2' type='text' name='cine' value='$cine'>
 		<input type='submit' value='Ver cartelera' name='btBuscarCine' >
 	</form>
 	
 	
 	<h3>Busqueda personalizada</h3>
+	<p>Buscar por los siguientes filtros</p>
 	<form action='#' method='post' name='personalizada'>
-		<label>Cine: <input type='text' name='cine' value='$personalizada[cine]'></label>
-		<label>Genero: <input type='text' name='genero' value='$personalizada[genero]'></label>
-		<label>Ciudad: <input type='text' name='ciudad' value='$personalizada[ciudad]'></label>
-		<label>Fecha: <input type='date' name='fecha' value='$personalizada[fecha]'></label>
-		<label>Hora: <input type='text' name='hora' list='horas' value='$personalizada[hora]'></label>
+		<label for='campo3'>Cine:</label>
+		<input id='campo3' type='text' name='cine' value='$personalizada[cine]'>
+		<label for='campo4'>Genero:</label>
+		<input id='campo4' type='text' name='genero' value='$personalizada[genero]'>
+		<label for='campo5'>Ciudad:</label>
+		<input id='campo5' type='text' name='ciudad' value='$personalizada[ciudad]'>
+		<label for='campo6'>Fecha:</label>
+		<input id='campo6' type='date' name='fecha' value='$personalizada[fecha]'>
+		<label for='campo7'>Hora:</label>
+		<input id='campo7' type='text' name='hora' list='horas' value='$personalizada[hora]'>
 		<datalist id='horas'>
 		  <option>00:00</option><option>00:30</option><option>01:00</option><option>01:30</option><option>02:00</option><option>02:30</option>
 		  <option>03:00</option><option>03:30</option><option>04:00</option><option>04:30</option><option>05:00</option><option>05:30</option>

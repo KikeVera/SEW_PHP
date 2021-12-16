@@ -373,24 +373,31 @@
 		
 	<h3>Buscar una pelicula</h3>
 	<form action='#' method='post' name='insercion'>
-		<label>Titulo: <input type='text' name='pelicula' value='$pelicula'></label>
+		<label for='campo1'>Titulo:</label>
+		<input type='text' name='pelicula' value='$pelicula'>
 		<input type='submit' value='Buscar pelicula' name='btBuscarPeli' >
 	</form>
 	
 	
 	<h3>Cartelera</h3>
 	<form action='#' method='post' name='insercion'>
-		<label>Cine: <input type='text' name='cine' value='$cine'></label>
+		<label for='campo2'>Cine:</label>
+		<input type='text' name='cine' value='$cine'>
 		<input type='submit' value='Ver cartelera' name='btBuscarCine' >
 	</form>
 	
 	
 	<h3>Busqueda personalizada</h3>
 	<form action='#' method='post' name='personalizada'>
+		<label for='campo3'>Cine:</label>
 		<label>Cine: <input type='text' name='cine' value='$personalizada[cine]'></label>
+		<label for='campo4'>Genero:</label>
 		<label>Genero: <input type='text' name='genero' value='$personalizada[genero]'></label>
+		<label for='campo5'>Ciudad:</label>
 		<label>Ciudad: <input type='text' name='ciudad' value='$personalizada[ciudad]'></label>
+		<label for='campo6'>Fecha:</label>
 		<label>Fecha: <input type='date' name='fecha' value='$personalizada[fecha]'></label>
+		<label for='campo7'>Hora:</label>
 		<label>Hora: <input type='text' name='hora' list='horas' value='$personalizada[hora]'></label>
 		<datalist id='horas'>
 		  <option>00:00</option><option>00:30</option><option>01:00</option><option>01:30</option><option>02:00</option><option>02:30</option>
@@ -410,7 +417,8 @@
 	</form>
 	
 	<h3>Resultado de la busqueda</h3>
-	<textarea >$mensajes</textarea>
+	<label for='resultado'>Resultado:</label> 
+	<textarea id='resultado'>$mensajes</textarea>
 	
 	
 

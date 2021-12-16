@@ -3,83 +3,228 @@
 <html lang="es"><head>
 <meta charset="UTF-8">
 
-<title>CalculadoraCientifica</title>
-<link rel="stylesheet" href="CalculadoraCientifica.css">
+<title>Cine</title>
+<link rel="stylesheet" href="Ejercicio7.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
 <body>
 
-<h1>Calculadora</h1>
+ <h1>Base de Datos Cine</h1>
 
 <main>
-<section>
-<h2>Calculadora Cientifica</h2>
+<h2>Menu</h2>
  
 	
-	<label for="ans">Ans:</label> 
-	<input disabled="disabled" type="text" id="ans" value="">
-	<form action="#" method="post" name="botones">
+	<h3>Mensajes</h3>
+	<label for="mensajes">Mensajes:</label> 
+	<textarea id="mensajes"></textarea>
 		
-			<input type="submit" value="RAD" name="ang">
-			<input type="submit" value="HYP" name="HYP">
-			
-			
-			<input type="submit" value="mr" name="mr">
-			<input type="submit" value="mc" name="mc">
-			<input type="submit" value="m-" name="m-">
-			<input type="submit" value="m+" name="m+">
-			<input type="submit" value="ms" name="ms">
+	<h3>Operaciones generales</h3>
+	
+	<form action="#" method="post" name="generales">
+		<input type="submit" value="Crear base" name="btCrearBase">
+		<input type="submit" value="Crear tablas" name="btCrearTabla">
+	</form>
+	<h3>Insertar Datos</h3>
+	<h4>Cine</h4>
+	<form action="#" method="post" name="insercion">
+		<label>Nombre: <input type="text" name="nombre" value=""></label>
+		<label>Ciudad: <input type="text" name="ciudad" value=""></label>
+		<label>Empresa: <input type="text" name="empresa" value=""></label>
 		
-			<input type="submit" value="x²" name="x2">
-			<input type="submit" value="xⁿ" name="xn">
-			<input type="submit" value="sin" name="sin">
-			<input type="submit" value="cos" name="cos">
-			<input type="submit" value="tan" name="tan">
+		<input type="submit" value="Insertar Datos" name="btInsertar">
+	</form>
+	
+	<h4>Pelicula</h4>
+	<form action="#" method="post" name="insercionPelicula">
+		<label>Titulo: <input type="text" name="titulo" value=""></label>
+		<label>Duracion(min): <input type="text" name="duracion" value=""></label>
+		<label>Genero: <input type="text" name="genero" value=""></label>
 		
-			<input type="submit" value="√" name="raiz">
-			<input type="submit" value="10ⁿ" name="10n">
-			<input type="submit" value="log" name="log">
-			<input type="submit" value="Exp" name="Exp">
-			<input type="submit" value="Mod" name="Mod">
-			
+		<input type="submit" value="Insertar Datos" name="btInsertarPelicula">
+	</form>
+	
+	<h4>Sala</h4>
+	<form action="#" method="post" name="insercionSala">
+		<label>idCine: <input type="text" name="idCine" value=""></label>
+		<label>Numero: <input type="text" name="numero" value=""></label>
+		<label>Capacidad: <input type="text" name="capacidad" value=""></label>
 		
-			<input type="submit" value="e" name="e">
-			<input type="submit" value="CE" name="CE">
-			<input type="submit" value="C" name="C">
-			<input type="submit" value="⇐" name="back">
-			<input type="submit" value="/" name="/">
+		<input type="submit" value="Insertar Datos" name="btInsertarSala">
+	</form>
+	
+	<h4>Sesion</h4>
+	<form action="#" method="post" name="insercionSesion">
+		<label>idSala: <input type="text" name="idSala" value=""></label>
+		<label>idPelicula: <input type="text" name="idPelicula" value=""></label>
+		<label>Fecha: <input type="date" name="fecha" value=""></label>
+		<label>Hora: <input type="text" list="horas" name="hora" value=""></label>
+		<datalist id="horas">
+		  <option>00:00</option><option>00:30</option><option>01:00</option><option>01:30</option><option>02:00</option><option>02:30</option>
+		  <option>03:00</option><option>03:30</option><option>04:00</option><option>04:30</option><option>05:00</option><option>05:30</option>
+		  <option>06:00</option><option>06:30</option><option>07:00</option><option>07:30</option><option>08:00</option><option>08:30</option>
+		  <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option>
+		  <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+		  <option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option>
+		  <option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option>
+		  <option>21:00</option><option>21:30</option><option>22:00</option><option>22:30</option><option>23:00</option><option>23:30</option>
+		  
+		  
+		  
+	
+		</datalist>
 		
-			<input type="submit" value="π" name="π">
-			<input type="submit" value="7" name="7">
-			<input type="submit" value="8" name="8">
-			<input type="submit" value="9" name="9">
-			<input type="submit" value="x" name="x">
+		<input type="submit" value="Insertar Datos" name="btInsertarSesion">
+	</form>
+	
+	<h3>Borrar Datos</h3>
+	<h4>Cine</h4>
+	<p>Borrar el campo con el id = ?</p>
+	<form action="#" method="post" name="borrado">
+		<label>Id: <input type="text" name="id" value=""></label>
+		<input type="submit" value="Borrar Datos" name="btBorrar">
+	</form>
+	
+	<h4>Pelicula</h4>
+	<p>Borrar el campo con el id = ?</p>
+	<form action="#" method="post" name="borradoPelicula">
+		<label>Id: <input type="text" name="idPelicula" value=""></label>
+		<input type="submit" value="Borrar Datos" name="btBorrarPelicula">
+	</form>
+	
+	<h4>Sala</h4>
+	<p>Borrar el campo con el id = ?</p>
+	<form action="#" method="post" name="borradoSala">
+		<label>Id: <input type="text" name="idSala" value=""></label>
+		<input type="submit" value="Borrar Datos" name="btBorrarSala">
+	</form>
+	
+	<h4>Sesion</h4>
+	<p>Borrar el campo con el idSala = ? y el idPelicula=?</p>
+	<form action="#" method="post" name="borradoSesion">
+		<label>IdSala: <input type="text" name="idSala" value=""></label>
+		<label>IdPelicula: <input type="text" name="idPelicula" value=""></label>
+		<input type="submit" value="Borrar Datos" name="btBorrarSesion">
+	</form>
+	
+	<h3>Modificar Datos</h3>
+	<h4>Cine</h4>
+	<p>Modifica el campo con el id = ?</p>
+	<form action="#" method="post" name="modificacion">
+		<label>Id: <input type="text" name="id" value=""></label>
+		<label>Nombre: <input type="text" name="nombre" value=""></label>
+		<label>Ciudad: <input type="text" name="ciudad" value=""></label>
+		<label>Empresa: <input type="text" name="empresa" value=""></label>
+		<input type="submit" value="Modificar Datos" name="btModificar">
+	</form>
+	
+	<h4>Pelicula</h4>
+	<p>Modifica el campo con el id = ?</p>
+	<form action="#" method="post" name="modificacionPelicula">
+		<label>Id: <input type="text" name="idPelicula" value=""></label>
+		<label>Titulo: <input type="text" name="titulo" value=""></label>
+		<label>Duracion(min): <input type="text" name="duracion" value=""></label>
+		<label>Genero: <input type="text" name="genero" value=""></label>
 		
-			<input type="submit" value="n!" name="n!">
-			<input type="submit" value="4" name="4">
-			<input type="submit" value="5" name="5">
-			<input type="submit" value="6" name="6">
-			<input type="submit" value="-" name="-">
+		<input type="submit" value="Modificar Datos" name="btModificarPelicula">
+	</form>
+	
+	<h4>Sala</h4>
+	<p>Modifica el campo con el id = ?</p>
+	<form action="#" method="post" name="modificacionSala">
+		<label>Id: <input type="text" name="idSala" value=""></label>
+		<label>Numero: <input type="text" name="numero" value=""></label>
+		<label>Capacidad: <input type="text" name="capacidad" value=""></label>
 		
-			<input type="submit" value="+-" name="+-">
-			<input type="submit" value="1" name="1">
-			<input type="submit" value="2" name="2">
-			<input type="submit" value="3" name="3">
-			<input type="submit" value="+" name="+">
+		<input type="submit" value="Modificar Datos" name="btModificarSala">
+	</form>
+	
+	<h4>Sesion</h4>
+	<p>Modifica el campo con el idSala = ? y el idPelicula=?</p>
+	<form action="#" method="post" name="modificacionSesion">
+		<label>idSala: <input type="text" name="idSala" value=""></label>
+		<label>idPelicula: <input type="text" name="idPelicula" value=""></label>
+		<label>Fecha: <input type="date" name="fecha" value=""></label>
+		<label>Hora: <input type="text" list="horas2" name="hora" value=""></label>
+		<datalist id="horas2">
+		  <option>00:00</option><option>00:30</option><option>01:00</option><option>01:30</option><option>02:00</option><option>02:30</option>
+		  <option>03:00</option><option>03:30</option><option>04:00</option><option>04:30</option><option>05:00</option><option>05:30</option>
+		  <option>06:00</option><option>06:30</option><option>07:00</option><option>07:30</option><option>08:00</option><option>08:30</option>
+		  <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option>
+		  <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+		  <option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option>
+		  <option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option>
+		  <option>21:00</option><option>21:30</option><option>22:00</option><option>22:30</option><option>23:00</option><option>23:30</option>
+		  
+		  
+		  
+	
+		</datalist>
 		
-			<input type="submit" value="(" name="(">
-			<input type="submit" value=")" name=")">
-			<input type="submit" value="0" name="0">
-			<input type="submit" value="." name="punto">
-			<input type="submit" value="=" name="=">
-		
+		<input type="submit" value="Modificar Datos" name="btModificarSesion">
 	</form>
 	
 	
-	</section>
-</main>
+	
+	
+	<h3>Importar de csv</h3>
+	<h4>Cine</h4>
+	<form action="#" method="post" name="importar" enctype="multipart/form-data">
+		<label>Elige un archivo csv<input type="file" name="file" accept=".csv"></label>
+		<input type="submit" value="Importar" name="btImpCsv">
+		
+	</form>
+	
+	<h4>Pelicula</h4>
+	<form action="#" method="post" name="importarPelicula" enctype="multipart/form-data">
+		<label>Elige un archivo csv<input type="file" name="filePelicula" accept=".csv"></label>
+		<input type="submit" value="Importar" name="btImpCsvPelicula">
+		
+	</form>
+	
+	<h4>Sala</h4>
+	<form action="#" method="post" name="importarSala" enctype="multipart/form-data">
+		<label>Elige un archivo csv<input type="file" name="fileSala" accept=".csv"></label>
+		<input type="submit" value="Importar" name="btImpCsvSala">
+		
+	</form>
+	
+	<h4>Sesion</h4>
+	<form action="#" method="post" name="importarSesion" enctype="multipart/form-data">
+		<label>Elige un archivo csv<input type="file" name="fileSesion" accept=".csv"></label>
+		<input type="submit" value="Importar" name="btImpCsvSesion">
+		
+	</form>
+	
+	<h3>Exportar a csv</h3>
+	<h4>Cine</h4>
+	<form action="#" method="post" name="exportar">
+		<input type="submit" value="Exportar" name="btExpCsv">
+	</form>
+	
+	<h4>Pelicula</h4>
+	<form action="#" method="post" name="exportarPelicula">
+		<input type="submit" value="Exportar" name="btExpCsvPelicula">
+	</form>
+	
+	<h4>Sala</h4>
+	<form action="#" method="post" name="exportarSala">
+		<input type="submit" value="Exportar" name="btExpCsvSala">
+	</form>
+	
+	<h4>Sesion</h4>
+	<form action="#" method="post" name="exportarSesion">
+		<input type="submit" value="Exportar" name="btExpCsvSesion">
+	</form>
+	
+	
+	
+	
+
+	
+	</main>
 
 
 

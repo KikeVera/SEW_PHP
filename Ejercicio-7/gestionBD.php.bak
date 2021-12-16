@@ -1007,48 +1007,66 @@
 	echo " 
 	
 	<h3>Mensajes</h3>
-	<textarea >$mensajes</textarea>
+	<label for='mensajes'>Mensajes:</label> 
+	<textarea id='mensajes'>$mensajes</textarea>
 		
 	<h3>Operaciones generales</h3>
 	
 	<form action='#' method='post' name='generales'>
-		<input type='submit'  value='Crear base' name='btCrearBase' >
-		<input type='submit'  value='Crear tablas' name='btCrearTabla' >
+		<input type='submit' value='Crear base' name='btCrearBase' >
+		<input type='submit' value='Crear tablas' name='btCrearTabla' >
 	</form>
 	<h3>Insertar Datos</h3>
 	<h4>Cine</h4>
+	<p>Insertar nuevo cine:</p>
 	<form action='#' method='post' name='insercion'>
-		<label>Nombre: <input type='text' name='nombre' value='$insertar[nombre]'></label>
-		<label>Ciudad: <input type='text' name='ciudad' value='$insertar[ciudad]'></label>
-		<label>Empresa: <input type='text' name='empresa' value='$insertar[empresa]'></label>
+		<label for='campo1'>Nombre:</label>
+		<input id='campo1' type='text' name='nombre' value='$insertar[nombre]'>
+		<label for='campo2'>Ciudad:</label>
+		<input id='campo2' type='text' name='ciudad' value='$insertar[ciudad]'>
+		<label for='campo3'>Empresa:</label>
+		<input id='campo3' type='text' name='empresa' value='$insertar[empresa]'>
 		
 		<input type='submit' value='Insertar Datos' name='btInsertar' >
 	</form>
 	
 	<h4>Pelicula</h4>
+	<p>Insertar nueva pelicula:</p>
 	<form action='#' method='post' name='insercionPelicula'>
-		<label>Titulo: <input type='text' name='titulo' value='$insertarPelicula[titulo]'></label>
-		<label>Duracion(min): <input type='text' name='duracion' value='$insertarPelicula[duracion]'></label>
-		<label>Genero: <input type='text' name='genero' value='$insertarPelicula[genero]'></label>
+		<label for='campo4'>Titulo:</label>
+		<input id='campo4' type='text' name='titulo' value='$insertarPelicula[titulo]'>
+		<label for='campo5'>Duración:</label>
+		<input id='campo5' type='text' name='duracion' value='$insertarPelicula[duracion]'>
+		<label for='campo6'>Genero:</label>
+		<input id='campo6' type='text' name='genero' value='$insertarPelicula[genero]'><
 		
 		<input type='submit' value='Insertar Datos' name='btInsertarPelicula' >
 	</form>
 	
 	<h4>Sala</h4>
+	<p>Insertar nueva sala:</p>
 	<form action='#' method='post' name='insercionSala'>
-		<label>idCine: <input type='text' name='idCine' value='$insertarSala[idCine]'></label>
-		<label>Numero: <input type='text' name='numero' value='$insertarSala[numero]'></label>
-		<label>Capacidad: <input type='text' name='capacidad' value='$insertarSala[capacidad]'></label>
+		<label for='campo7'>idCine:</label>
+		<input id='campo7' type='text' name='idCine' value='$insertarSala[idCine]'>
+		<label for='campo8'>Numero:</label>
+		<input id='campo8' type='text' name='numero' value='$insertarSala[numero]'>
+		<label for='campo9'>Capacidad:</label>
+		<input id='campo9' type='text' name='capacidad' value='$insertarSala[capacidad]'>
 		
 		<input type='submit' value='Insertar Datos' name='btInsertarSala' >
 	</form>
 	
 	<h4>Sesion</h4>
+	<p>Insertar nueva sesión:</p>
 	<form action='#' method='post' name='insercionSesion'>
-		<label>idSala: <input type='text' name='idSala' value='$insertarSesion[idSala]'></label>
-		<label>idPelicula: <input type='text' name='idPelicula' value='$insertarSesion[idPelicula]'></label>
-		<label>Fecha: <input type='date' name='fecha' value='$insertarSesion[fecha]'></label>
-		<label>Hora: <input type='text' list='horas' name='hora' value='$insertarSesion[hora]'></label>
+		<label for='campo10'>idSala:</label>
+		<input id='campo10' type='text' name='idSala' value='$insertarSesion[idSala]'>
+		<label for='campo11'>idPelicula:</label>
+		<input id='campo11' type='text' name='idPelicula' value='$insertarSesion[idPelicula]'>
+		<label for='campo12'>Fecha:</label>
+		<input id='campo12' type='date' name='fecha' value='$insertarSesion[fecha]'>
+		<label for='campo13'>Hora:</label>
+		<input id='campo13' type='text' list='horas' name='hora' value='$insertarSesion[hora]'>
 		<datalist id='horas'>
 		  <option>00:00</option><option>00:30</option><option>01:00</option><option>01:30</option><option>02:00</option><option>02:30</option>
 		  <option>03:00</option><option>03:30</option><option>04:00</option><option>04:30</option><option>05:00</option><option>05:30</option>
@@ -1071,29 +1089,34 @@
 	<h4>Cine</h4>
 	<p>Borrar el campo con el id = ?</p>
 	<form action='#' method='post' name='borrado'>
-		<label>Id: <input type='text' name='id' value='$borrar[id]'></label>
+		<label for='campo14'>Id:</label>
+		<input id='campo14' type='text' name='id' value='$borrar[id]'>
 		<input type='submit' value='Borrar Datos' name='btBorrar' >
 	</form>
 	
 	<h4>Pelicula</h4>
 	<p>Borrar el campo con el id = ?</p>
 	<form action='#' method='post' name='borradoPelicula'>
-		<label>Id: <input type='text' name='idPelicula' value='$borrarPelicula[id]'></label>
+		<label for='campo15'>Id:</label>
+		<input id='campo15' type='text' name='idPelicula' value='$borrarPelicula[id]'>
 		<input type='submit' value='Borrar Datos' name='btBorrarPelicula' >
 	</form>
 	
 	<h4>Sala</h4>
 	<p>Borrar el campo con el id = ?</p>
 	<form action='#' method='post' name='borradoSala'>
-		<label>Id: <input type='text' name='idSala' value='$borrarSala[id]'></label>
+		<label for='campo16'>Id:</label>
+		<input id='campo16' type='text' name='idSala' value='$borrarSala[id]'>
 		<input type='submit' value='Borrar Datos' name='btBorrarSala' >
 	</form>
 	
 	<h4>Sesion</h4>
 	<p>Borrar el campo con el idSala = ? y el idPelicula=?</p>
 	<form action='#' method='post' name='borradoSesion'>
-		<label>IdSala: <input type='text' name='idSala' value='$borrarSesion[idSala]'></label>
-		<label>IdPelicula: <input type='text' name='idPelicula' value='$borrarSesion[idPelicula]'></label>
+		<label for='campo17'>IdSala:</label>
+		<input id='campo17' type='text' name='idSala' value='$borrarSesion[idSala]'>
+		<label for='campo18'>IdPelicula:</label>
+		<input id='campo18' type='text' name='idPelicula' value='$borrarSesion[idPelicula]'>
 		<input type='submit' value='Borrar Datos' name='btBorrarSesion' >
 	</form>
 	
@@ -1101,20 +1124,28 @@
 	<h4>Cine</h4>
 	<p>Modifica el campo con el id = ?</p>
 	<form action='#' method='post' name='modificacion'>
-		<label>Id: <input type='text' name='id' value='$modificar[id]'></label>
-		<label>Nombre: <input type='text' name='nombre' value='$modificar[nombre]'></label>
-		<label>Ciudad: <input type='text' name='ciudad' value='$modificar[ciudad]'></label>
-		<label>Empresa: <input type='text' name='empresa' value='$modificar[empresa]'></label>
+		<label for='campo19'>Id:</label>
+		<input id='campo19' type='text' name='id' value='$modificar[id]'>
+		<label for='campo20'>Nombre:</label>
+		<input id='campo20' type='text' name='nombre' value='$modificar[nombre]'>
+		<label for='campo21'>Ciudad:</label>
+		<input id='campo21' type='text' name='ciudad' value='$modificar[ciudad]'>
+		<label for='campo22'>Empresa:</label>
+		<input id='campo22' type='text' name='empresa' value='$modificar[empresa]'>
 		<input type='submit' value='Modificar Datos' name='btModificar' >
 	</form>
 	
 	<h4>Pelicula</h4>
 	<p>Modifica el campo con el id = ?</p>
 	<form action='#' method='post' name='modificacionPelicula'>
-		<label>Id: <input type='text' name='idPelicula' value='$modificarPelicula[id]'></label>
-		<label>Titulo: <input type='text' name='titulo' value='$modificarPelicula[titulo]'></label>
-		<label>Duracion(min): <input type='text' name='duracion' value='$modificarPelicula[duracion]'></label>
-		<label>Genero: <input type='text' name='genero' value='$modificarPelicula[genero]'></label>
+		<label for='campo23'>Id:</label>
+		<input id='campo23' type='text' name='idPelicula' value='$modificarPelicula[id]'>
+		<label for='campo24'>Titulo:</label>
+		<input id='campo24' type='text' name='titulo' value='$modificarPelicula[titulo]'>
+		<label for='campo25'>Duracion(min):</label>
+		<input id='campo25' type='text' name='duracion' value='$modificarPelicula[duracion]'>
+		<label for='campo26'>Genero:</label>
+		<input id='campo26' type='text' name='genero' value='$modificarPelicula[genero]'>
 		
 		<input type='submit' value='Modificar Datos' name='btModificarPelicula' >
 	</form>
@@ -1122,20 +1153,27 @@
 	<h4>Sala</h4>
 	<p>Modifica el campo con el id = ?</p>
 	<form action='#' method='post' name='modificacionSala'>
-		<label>Id: <input type='text' name='idSala' value='$modificarSala[id]'></label>
-		<label>Numero: <input type='text' name='numero' value='$modificarSala[numero]'></label>
-		<label>Capacidad: <input type='text' name='capacidad' value='$modificarSala[capacidad]'></label>
+		<label for='campo27'>Id:</label>
+		<input id='campo27' type='text' name='idSala' value='$modificarSala[id]'>
+		<label for='campo28'>Numero:</label>
+		<input id='campo28' type='text' name='numero' value='$modificarSala[numero]'>
+		<label for='campo29'>Capacidad:</label>
+	    <input id='campo29' type='text' name='capacidad' value='$modificarSala[capacidad]'>
 		
-		<input type='submit' value='Modificar Datos' name='btModificarSala' >
+		<input type='submit' value='Modificar Datos' name='btModificarSala'>
 	</form>
 	
 	<h4>Sesion</h4>
 	<p>Modifica el campo con el idSala = ? y el idPelicula=?</p>
 	<form action='#' method='post' name='modificacionSesion'>
-		<label>idSala: <input type='text' name='idSala' value='$modificarSesion[idSala]'></label>
-		<label>idPelicula: <input type='text' name='idPelicula' value='$modificarSesion[idPelicula]'></label>
-		<label>Fecha: <input type='date' name='fecha' value='$modificarSesion[fecha]'></label>
-		<label>Hora: <input type='text' list='horas2' name='hora' value='$modificarSesion[hora]'></label>
+		<label for='campo30'>IdSala:</label>
+		<input id='campo30' type='text' name='idSala' value='$modificarSesion[idSala]'>
+		<label for='campo31'>IdPelicula:</label>
+		<input id='campo31' type='text' name='idPelicula' value='$modificarSesion[idPelicula]'>
+		<label for='campo32'>Fecha:</label>
+		<input id='campo32' type='date' name='fecha' value='$modificarSesion[fecha]'>
+		<label for='campo33'>Hora:</label>
+		<input id='campo33' type='text' list='horas2' name='hora' value='$modificarSesion[hora]'>
 		<datalist id='horas2'>
 		  <option>00:00</option><option>00:30</option><option>01:00</option><option>01:30</option><option>02:00</option><option>02:30</option>
 		  <option>03:00</option><option>03:30</option><option>04:00</option><option>04:30</option><option>05:00</option><option>05:30</option>
@@ -1160,28 +1198,32 @@
 	<h3>Importar de csv</h3>
 	<h4>Cine</h4>
 	<form action='#' method='post' name='importar' enctype='multipart/form-data'>
-		<label>Elige un archivo csv<input type='file' name='file' accept='.csv'></label>
+		<label for='campo34'>Elige un archivo csv:</label>
+		<input id='campo34' type='file' name='file' accept='.csv'>
 		<input type='submit' value='Importar' name='btImpCsv' >
 		
 	</form>
 	
 	<h4>Pelicula</h4>
 	<form action='#' method='post' name='importarPelicula' enctype='multipart/form-data'>
-		<label>Elige un archivo csv<input type='file' name='filePelicula' accept='.csv'></label>
+		<label for='campo35'>Elige un archivo csv:</label>
+		<input id='campo35' type='file' name='filePelicula' accept='.csv'>
 		<input type='submit' value='Importar' name='btImpCsvPelicula' >
 		
 	</form>
 	
 	<h4>Sala</h4>
 	<form action='#' method='post' name='importarSala' enctype='multipart/form-data'>
-		<label>Elige un archivo csv<input type='file' name='fileSala' accept='.csv'></label>
+		<label for='campo36'>Elige un archivo csv:</label>
+		<input id='campo36' type='file' name='fileSala' accept='.csv'>
 		<input type='submit' value='Importar' name='btImpCsvSala' >
 		
 	</form>
 	
 	<h4>Sesion</h4>
 	<form action='#' method='post' name='importarSesion' enctype='multipart/form-data'>
-		<label>Elige un archivo csv<input type='file' name='fileSesion' accept='.csv'></label>
+		<label for='campo37'>Elige un archivo csv:</label>
+		<input id='campo37' type='file' name='fileSesion' accept='.csv'>
 		<input type='submit' value='Importar' name='btImpCsvSesion' >
 		
 	</form>
